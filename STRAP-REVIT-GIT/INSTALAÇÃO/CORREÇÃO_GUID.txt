@@ -1,0 +1,44 @@
+🔧 CORREÇÃO DE GUID DUPLICADO - STRAP-REVIT
+============================================
+
+❌ PROBLEMA IDENTIFICADO:
+O erro "GUID duplicado" indica que já existe outro plugin no Revit 
+com o mesmo identificador único (GUID) do STRAP-REVIT.
+
+✅ SOLUÇÃO APLICADA:
+Gerado novo GUID único para o STRAP-REVIT:
+NOVO GUID: 8fb1a94b-e9ea-4a55-bd9f-7a45c24e20c7
+
+🔄 ARQUIVOS CORRIGIDOS:
+- STRAP-REVIT.addin (ClientId atualizado)
+- StrapRevit.dll (recompilado com novo GUID)
+- Properties/AssemblyInfo.cs (GUID atualizado)
+- STRAP-REVIT.csproj (ProjectGuid atualizado)
+
+🚀 PRÓXIMOS PASSOS:
+============================================
+
+1. REMOVER ARQUIVOS ANTIGOS DO REVIT:
+   - Abra: %APPDATA%\Autodesk\Revit\Addins\2024
+   - Delete: StrapRevit.dll (versão antiga)
+   - Delete: STRAP-REVIT.addin (versão antiga)
+
+2. INSTALAR VERSÕES CORRIGIDAS:
+   - Copie StrapRevit.dll (NOVO - da pasta INSTALAÇÃO)
+   - Copie STRAP-REVIT.addin (NOVO - da pasta INSTALAÇÃO)
+
+3. REINICIAR REVIT:
+   - Feche Revit completamente
+   - Abra Revit novamente
+   - Aba STRAP-REVIT deve aparecer SEM ERRO
+
+✅ RESULTADO ESPERADO:
+============================================
+- ✅ Aba "STRAP-REVIT" funcionando
+- ✅ Painel "STRAP Tools" disponível  
+- ✅ SEM mensagens de erro de GUID
+- ✅ Plugin pronto para uso
+
+⚠️ IMPORTANTE:
+Sempre use os arquivos ATUALIZADOS da pasta INSTALAÇÃO!
+

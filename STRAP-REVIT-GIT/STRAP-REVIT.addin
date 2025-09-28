@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>STRAP-REVIT</Name>
+    <Assembly>StrapRevit.dll</Assembly>
+    <ClientId>8fb1a94b-e9ea-4a55-bd9f-7a45c24e20c7</ClientId>
+    <FullClassName>StrapRevit.Application</FullClassName>
+    <VendorId>STRAP</VendorId>
+    <VendorDescription>STRAP Engineering Solutions</VendorDescription>
+    <Text>STRAP-REVIT</Text>
+    <Description>STRAP Revit Integration Plugin</Description>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <Discipline>Any</Discipline>
+  </AddIn>
+</RevitAddIns>

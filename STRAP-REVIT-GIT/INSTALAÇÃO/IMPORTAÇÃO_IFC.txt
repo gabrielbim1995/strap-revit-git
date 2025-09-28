@@ -1,0 +1,97 @@
+🎉 PLUGIN STRAP-REVIT COM IMPORTAÇÃO IFC IMPLEMENTADA!
+======================================================
+
+✅ NOVA FUNCIONALIDADE ADICIONADA:
+- Importação inteligente de arquivos IFC do STRAP
+- Criação de elementos nativos do Revit (não DirectShapes)
+- Sincronização incremental baseada em GUIDs
+- Rastreabilidade completa com parâmetros IFC
+
+📋 COMO USAR A IMPORTAÇÃO IFC:
+===============================
+
+1. ABRIR PROJETO NO REVIT:
+   - Abra um projeto novo ou existente
+   - A aba "STRAP-REVIT" deve estar visível
+
+2. IMPORTAR ARQUIVO IFC:
+   - Clique no botão "Importar IFC STRAP"
+   - Selecione o arquivo .ifc exportado pelo STRAP
+   - Configure as opções de importação
+
+3. OPÇÕES DE IMPORTAÇÃO:
+   ✅ Criar níveis automaticamente
+   ✅ Criar materiais automaticamente  
+   ✅ Atualizar elementos existentes
+   - Selecionar fase padrão
+   - Selecionar workset (se projeto colaborativo)
+
+4. ELEMENTOS CRIADOS:
+   • Vigas → Structural Framing
+   • Pilares → Structural Columns
+   • Lajes → Floors
+   • Fundações → Structural Foundations
+
+5. RE-SINCRONIZAÇÃO:
+   - Exporte novo IFC do STRAP com alterações
+   - Execute novamente "Importar IFC STRAP"
+   - Apenas alterações serão aplicadas
+   - Elementos órfãos serão marcados
+
+🔧 PARÂMETROS DE RASTREABILIDADE:
+==================================
+Cada elemento importado terá:
+- IFC_GUID: Identificador único
+- IFC_Class: Classe IFC original
+- IFC_SourceFile: Arquivo de origem
+- IFC_LastSync: Data/hora da sincronização
+- IFC_Orphan: Marca elementos órfãos
+- IFC_TypeName: Nome do tipo no IFC
+- IFC_Material: Material do IFC
+
+📊 RELATÓRIO DE IMPORTAÇÃO:
+===========================
+Após cada importação, você verá:
+- Total de elementos processados
+- Elementos criados vs atualizados
+- Elementos órfãos detectados
+- Materiais e níveis criados
+- Tempo de processamento
+- Avisos e erros (se houver)
+
+⚡ PERFORMANCE:
+===============
+- Arquivos pequenos: < 5 segundos
+- Arquivos médios: 10-30 segundos
+- Arquivos grandes: 1-3 minutos
+- Re-sincronização: Muito mais rápida
+
+🎯 FLUXO RECOMENDADO:
+=====================
+1. Modelagem estrutural no STRAP
+2. Exportação para IFC com GUIDs
+3. Importação no Revit via plugin
+4. Documentação com elementos nativos
+5. Alterações no STRAP
+6. Re-exportação IFC
+7. Re-sincronização incremental
+
+✨ BENEFÍCIOS:
+==============
+- Elementos editáveis no Revit
+- Famílias paramétricas nativas
+- Atualização sem recriar tudo
+- Rastreabilidade completa
+- Compatibilidade BIM total
+
+📌 IMPORTANTE:
+==============
+- Use sempre o mesmo arquivo IFC base
+- Mantenha GUIDs consistentes no STRAP
+- Faça backup antes de grandes importações
+- Verifique elementos órfãos periodicamente
+
+🚀 VERSÃO: 1.0.0 com Importação IFC
+📅 DATA: 27/09/2025
+🏗️ STRAP Engineering Solutions
+

@@ -1,0 +1,56 @@
+🏗️ INSTALAÇÃO DO PLUGIN STRAP-REVIT
+===============================================
+
+📋 ARQUIVOS NECESSÁRIOS:
+✅ StrapRevit.dll         - Plugin principal
+✅ STRAP-REVIT.addin      - Manifesto do plugin
+
+📁 PASTA DE DESTINO:
+%APPDATA%\Autodesk\Revit\Addins\2024\
+
+📂 CAMINHO COMPLETO:
+C:\Users\[SEU_USUARIO]\AppData\Roaming\Autodesk\Revit\Addins\2024\
+
+🔧 PASSOS DE INSTALAÇÃO:
+===============================================
+
+1. 📂 ABRIR PASTA DE DESTINO:
+   - Pressione Windows + R
+   - Digite: %APPDATA%\Autodesk\Revit\Addins\2024
+   - Pressione Enter
+
+2. 📋 COPIAR ARQUIVOS:
+   - Copie StrapRevit.dll para a pasta
+   - Copie STRAP-REVIT.addin para a pasta
+
+3. 🔄 REINICIAR REVIT:
+   - Feche o Revit completamente
+   - Abra o Revit novamente
+
+4. ✅ VERIFICAR INSTALAÇÃO:
+   - Procure a aba "STRAP-REVIT" no Ribbon
+   - Deve aparecer o painel "STRAP Tools"
+
+⚠️ RESOLUÇÃO DE PROBLEMAS:
+===============================================
+
+❌ Se a aba não aparecer:
+   - Verifique se os 2 arquivos estão na pasta correta
+   - Verifique se o Revit foi reiniciado
+   - Verifique se é Revit 2024 (outras versões precisam de pasta diferente)
+
+❌ Se der erro ao carregar:
+   - Verifique se o arquivo StrapRevit.dll não está bloqueado
+   - Clique direito no arquivo → Propriedades → Desbloquear
+
+📞 SUCESSO ESPERADO:
+===============================================
+✅ Aba "STRAP-REVIT" visível no Ribbon
+✅ Painel "STRAP Tools" disponível
+✅ Plugin pronto para desenvolvimento de funcionalidades
+
+===============================================
+Plugin STRAP-REVIT v1.0.0
+STRAP Engineering Solutions © 2025
+===============================================
+

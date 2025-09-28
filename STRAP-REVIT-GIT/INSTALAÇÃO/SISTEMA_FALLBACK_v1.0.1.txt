@@ -1,0 +1,94 @@
+🔧 STRAP-REVIT v1.0.1 - SISTEMA DE FALLBACK IMPLEMENTADO
+========================================================
+
+✅ PROBLEMA RESOLVIDO:
+O plugin agora cria TODOS os elementos IFC, mesmo quando as famílias 
+específicas não estão disponíveis no projeto Revit.
+
+🎯 NOVA FUNCIONALIDADE:
+=======================
+
+FALLBACK AUTOMÁTICO:
+- Se família específica não existir
+- Plugin usa qualquer família disponível do mesmo tipo
+- Elemento é criado na posição EXATA do IFC
+- Informação sobre substituição é registrada
+
+EXEMPLO:
+--------
+IFC: Pilar "Cx100x100#3.75" (perfil metálico tubular)
+↓
+Família pretendida: "Pilar-Metálico-Tubular" (não encontrada)
+↓
+Família usada: "Concrete-Column" (disponível no projeto)
+↓
+✅ Pilar criado com sucesso na posição correta!
+
+📋 INFORMAÇÕES REGISTRADAS:
+===========================
+
+NOVO PARÂMETRO: IFC_FallbackInfo
+Exemplo: "Família pretendida: Pilar-Metálico-Tubular | Família usada: Concrete-Column"
+
+NOME DO TIPO INDICA FALLBACK:
+"P-Retangular 100x100 - Aço [FALLBACK: Pilar-Metálico-Tubular]"
+
+AVISOS NO RELATÓRIO:
+"Pilar Column 21: Usado fallback Concrete-Column no lugar de Pilar-Metálico-Tubular"
+
+🚀 RESULTADO ESPERADO NO PRÓXIMO TESTE:
+=======================================
+
+ANTES (v1.0.0):
+❌ 16 pilares identificados
+❌ 0 pilares criados
+❌ 16 erros de "referência não definida"
+
+DEPOIS (v1.0.1):
+✅ 16 pilares identificados  
+✅ 16 pilares criados com sucesso
+⚠️ 16 avisos sobre fallbacks usados
+📊 Elementos na posição exata do IFC
+
+🔧 COMO FUNCIONA:
+=================
+
+1. Plugin tenta encontrar família específica
+2. Se não encontrar, busca QUALQUER família do mesmo tipo
+3. Se encontrar, cria elemento com família disponível
+4. Registra informação sobre substituição
+5. Usuário pode revisar e trocar depois
+
+💡 VANTAGENS:
+=============
+
+✅ GARANTIA: Todos elementos são criados
+✅ POSIÇÃO: Localização exata do IFC mantida
+✅ RASTREABILIDADE: Sabe exatamente o que foi substituído
+✅ FLEXIBILIDADE: Funciona em qualquer projeto Revit
+✅ EDITABILIDADE: Elementos nativos, não DirectShapes
+
+📋 INSTALAÇÃO:
+==============
+
+1. Copie StrapRevit.dll (NOVA VERSÃO v1.0.1)
+2. Copie STRAP-REVIT.addin
+3. Para: %APPDATA%\Autodesk\Revit\Addins\2024
+4. Reinicie Revit
+5. Teste importação IFC novamente
+
+🎯 TESTE RECOMENDADO:
+====================
+
+1. Use o MESMO arquivo IFC do teste anterior
+2. Execute "Importar IFC STRAP"
+3. Verifique se TODOS os 16 pilares foram criados
+4. Confira parâmetro "IFC_FallbackInfo" nos elementos
+5. Observe avisos no relatório sobre fallbacks
+
+---
+VERSÃO: 1.0.1 com Sistema de Fallback
+DATA: 27/09/2025
+STATUS: ✅ Pronto para teste - Criação garantida!
+
+

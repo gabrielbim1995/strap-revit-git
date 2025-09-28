@@ -1,0 +1,6 @@
+C:\Users\engga\PROGRAMAÇÃO\strap-DPC\DPCtoDWG\bin\Release\StrapRevit.dll
+C:\Users\engga\PROGRAMAÇÃO\strap-DPC\DPCtoDWG\bin\Release\StrapRevit.pdb
+C:\Users\engga\PROGRAMAÇÃO\strap-DPC\DPCtoDWG\obj\x64\Release\STRAP-REVIT.csproj.AssemblyReference.cache
+C:\Users\engga\PROGRAMAÇÃO\strap-DPC\DPCtoDWG\obj\x64\Release\STRAP-REVIT.csproj.CoreCompileInputs.cache
+C:\Users\engga\PROGRAMAÇÃO\strap-DPC\DPCtoDWG\obj\x64\Release\StrapRevit.dll
+C:\Users\engga\PROGRAMAÇÃO\strap-DPC\DPCtoDWG\obj\x64\Release\StrapRevit.pdb
